@@ -6,13 +6,15 @@
     <title>Meu Projeto Javascript</title>
 </head>
 <style>
-    body {
-        background-color: #970202;
+    body { 
+        /* Visual da pagina */
+        background-color: #970202; 
         color: white;
         font: 20px Arial, sans-serif;
     }
 
         div#botão {
+            /* Visual do botão */
             font: normal 20px Arial, sans-serif;
             background-color: rgb(64, 64, 175);
             color: white;
@@ -23,10 +25,12 @@
         }
         
         h1#Soma {
+            /* Visual do sistema de soma */
             color:rgb(112, 212, 65)
         }
         
         h1#Multa{
+            /* Visual do sistemas de multa */
             color: cadetblue;
         }
 
@@ -49,14 +53,20 @@
         =
         <input type="button" value="Resultado" onclick="somar()">
 
+
+
+
     <h1 id = 'Multa'> Sistema de Multas </h1>
         <p>A quantos quilometros por hora você está?</p>
         <input type="number" name="quilometros" id="km">
         <input type="button" value="Verificar" onclick="verificar()">
         <div id = 'res'> </div>
 
+
+
+
     <script>
-        var a = document.getElementById('botão'); 
+        var a = document.getElementById('botão'); //fazer o botão funcionar primeiro
         a.addEventListener('click', clicar);
         a.addEventListener('mouseenter', entrar);
         a.addEventListener('mouseleave', sair);
@@ -77,21 +87,20 @@
 
 
         function somar() {
-            var tn1 = document.getElementById('txtn1');
+            var tn1 = document.getElementById('txtn1'); //precisa pra pegar o input do texto
             var tn2 = document.getElementById('txtn2');
-            var n1 = Number(tn1.value);
+            var n1 = Number(tn1.value); //pegar o input do texto e transformar em numeral
             var n2 = Number(tn2.value);
             var soma = n1 + n2
-            var resultado = document.getElementById('Soma')
             alert(`A soma de ${n1} + ${n2} é igual a ${soma}`);
         }
 
 
 
         function verificar() {
-            var quilometros = document.getElementById('km')
-            var quilometrosn1 = Number(quilometros.value)
-            var res = document.getElementById('res')
+            var quilometros = document.getElementById('km') //pegar em txt
+            var quilometrosn1 = Number(quilometros.value) //transformar em numeral
+            var res = document.getElementById('res') //pegar a div pra colocar o resultado
 
             if (quilometrosn1 >=65)
                 res.innerHTML = `Você está acima da velocidade permitida. <strong>MULTADO!</strong>`
