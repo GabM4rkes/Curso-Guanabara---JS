@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto Javascript</title>
+</head>
+<style>
+    body {
+        background-color: #970202;
+        color: white;
+        font: 20px Arial, sans-serif;
+    }
+
+        div#botão {
+            font: normal 20px Arial, sans-serif;
+            background-color: rgb(64, 64, 175);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        
+        h1#Soma {
+            color:rgb(112, 212, 65)
+        }
+        
+        h1#Multa{
+            color: cadetblue;
+        }
+
+
+    
+
+</style>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Este é o meu primeiro projeto em javascript.</p>
+    <div id = 'botão'>
+        Não Clique!
+    </div>
+
+
+    <h1 id = 'Soma'>  Soma de valores  </h1>
+        <input type="number" name="txtn1" id="txtn1">
+        +
+        <input type="number" name="txtn2" id="txtn2">
+        =
+        <input type="button" value="Resultado" onclick="somar()">
+
+    <h1 id = 'Multa'> Sistema de Multas </h1>
+        <p>A quantos quilometros por hora você está?</p>
+        <input type="number" name="quilometros" id="km">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id = 'res'> </div>
+
+    <script>
+        var a = document.getElementById('botão'); 
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseleave', sair);
+        function clicar() {
+            a.innerHTML = 'Você clicou no botão!';
+        }
+
+        function entrar() {
+            a.style.backgroundColor = 'rgb(100, 100, 200)';
+            a.innerHTML = 'Não faça isso...'
+        }
+
+        function sair() {
+            a.style.backgroundColor = 'rgb(64, 64, 175)';
+            a.innerHTML = 'Não Clique!';
+        }
+
+
+
+        function somar() {
+            var tn1 = document.getElementById('txtn1');
+            var tn2 = document.getElementById('txtn2');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var soma = n1 + n2
+            var resultado = document.getElementById('Soma')
+            alert(`A soma de ${n1} + ${n2} é igual a ${soma}`);
+        }
+
+
+
+        function verificar() {
+            var quilometros = document.getElementById('km')
+            var quilometrosn1 = Number(quilometros.value)
+            var res = document.getElementById('res')
+
+            if (quilometrosn1 >=65)
+                res.innerHTML = `Você está acima da velocidade permitida. <strong>MULTADO!</strong>`
+            else
+                res.innerHTML = `Sua velocidade atual é de ${quilometrosn1} Km/h. Muito bem!`
+        }
+
+
+
+    </script>
+
+
+</html>
