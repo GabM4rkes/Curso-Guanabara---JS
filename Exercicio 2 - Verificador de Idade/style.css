@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(99, 214, 176, 0.699);
+    background-color: rgba(92, 197, 162, 0.699);
     font: normal 15pt Arial;
 }
 
@@ -16,6 +16,8 @@ section{
     margin: auto;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+
+
 }
 
 footer{
