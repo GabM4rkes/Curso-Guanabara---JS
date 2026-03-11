@@ -1,56 +1,47 @@
-# Curso Guanabara - JavaScript
+# JavaScript Exercises – Curso em Vídeo
 
-This repository contains my first JavaScript project, created while following Gustavo Guanabara's JavaScript course.
+This repository contains exercises and small projects that I built while following the JavaScript course by Gustavo Guanabara.
 
-It is part of my learning journey, so the project is still in progress and will continue to receive new exercises, experiments, and improvements as I move forward in the course.
+The goal of this repository is to document my progress while learning JavaScript and practicing programming fundamentals.
 
-## About the project
+## 📚 About the repository
 
-This project was built to practice the fundamentals of JavaScript in a simple and practical way.
+While studying the course, I created several small exercises and experiments to practice JavaScript concepts such as conditions, interactions, and DOM manipulation.
 
-So far, it includes exercises and small interactions such as:
+Some exercises are grouped inside a main project, while others are organized as separate mini-projects.
 
-- "Hello, World!" introduction
-- button interaction
-- value sum
-- speed check / traffic fine system
+## 📁 Project structure
 
-The main goal of this repository is to document my progress while I learn programming step by step.
+Projeto
+Main page containing several small JavaScript exercises from the course.
 
-## Technologies used
+Hora-do-dia
+A small project that changes the page based on the current time of day.
 
-- JavaScript
-- HTML
-- CSS
+More exercises and mini-projects will be added as I continue progressing through the course.
 
-## Purpose
+## 🛠 Technologies used
 
-I created this project to:
+* JavaScript
+* HTML5
+* CSS3
 
-- practice JavaScript basics
-- improve my programming logic
-- understand how interactivity works in web pages
-- keep track of my progress during the course
+## 📖 What I am learning
 
-## Project status
+Through these exercises I am practicing:
 
-🚧 In progress
+* variables and data types
+* conditions
+* DOM manipulation
+* user interaction
+* basic programming logic
 
-As I continue studying the course, I will keep updating this repository with new content and improvements.
+## 🚧 Project status
 
-## What I am learning
+In progress — new exercises and projects will be added as I advance in the course.
 
-Some of the concepts I am practicing in this project include:
+## 👨‍💻 Author
 
-- variables
-- user interaction
-- arithmetic operations
-- conditional statements
-- DOM basics
+Gabriel Marques
 
-## How to run the project
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/GabM4rkes/Curso-Guanabara---JS.git
+📧 [gabrieloliveiramarques09@gmail.com](mailto:gabrieloliveiramarques09@gmail.com)
